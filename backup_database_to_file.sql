@@ -1,0 +1,7 @@
+-- Set database to single user mode
+-- DATABASE_NAME: Name of backup database
+-- ALTER DATABASE [DATABASE_NAME] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+BACKUP DATABASE [DATABASE_NAME] TO  DISK = N'C:\MSSQL\Backup\DATABASE_NAME.bak' WITH INIT;
+
+-- Set database to multi user mode
+-- ALTER DATABASE [NewECB] SET MULTI_USER;
